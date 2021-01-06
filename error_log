@@ -1,0 +1,2 @@
+[31-Oct-2020 14:05:31 UTC] PHP Notice:  Undefined index: société in /home/ghcotuni/public_html/baby-distribution.com/submit.php on line 403
+[31-Oct-2020 14:24:43 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ghcotuni/public_html/baby-distribution.com/submit.php on line 475

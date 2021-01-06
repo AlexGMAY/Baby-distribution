@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABY DISTREBUTION</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="univers.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 d-flex align-items-center">
+					<p class="mb-0 phone pl-md-2">
+						<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +216 1234 567</a>
+						<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+					</p>
+				</div>
+				<div class="col-md-6 d-flex align-items-center">
+					<p class="mb-0 first-nav pl-md-2">
+						<a href="#" class="mr-2">Accueil</a>
+					</p>
+						<div class="jss275"></div>
+					<p class="mb-0 first-nav pl-md-2">
+						<a href="#" class="mr-2">Baby Distribution</a>
+					</p>
+						<div class="jss275"></div>
+					<p class="mb-0 first-nav pl-md-2">
+						<a href="#" class="mr-2">Santé Humaine</a>
+					</p>
+						<div class="jss275"></div>
+					<p class="mb-0 first-nav pl-md-2">
+						<a href="#" class="mr-2">Santé Animale</a>
+					</p>
+				</div>
+				<div class="col-md-2 d-flex justify-content-md-end">
+					<div class="social-media">
+						<p class="mb-0 d-flex">
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-linkedin"><i class="sr-only">Linkedin</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span
+									class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+<nav class="menu-navigation-icons">
+  <div class="menu-navigation-icons-top">
+      
+      <div class="logo">
+          <img src="logo-bb-distribution.png"/>
+      </div>
+     
+  </div>
+  <div class="menu-navigation-icons-bottom">
+      <a href="#" class="menu-magenta"><span>UNIVERS BEBES ET ENFANTS</span></a>
+      <a href="#" class="menu-blue"><span>UNIVERS MaMAN ET FEMME ENCEINTE</span></a>
+      <a href="#" class="menu-green"><span>UNIVERS VITORITE</span></a>
+      <a href="#" class="menu-yellow"><span>UNIVERS HYGIENE NASALE</span></a>
+      <a href="#" class="menu-red"><span>UNIVERS SOMMEIL & ANXIETE</span></a>
+  </div>
+</nav>
+
+<div class="univer-humain-cover">
+
+  <div class="univer-humain-cover-container-secondNav">
+        <div class="container-secondNav">
+           <p>Nos Produis</p>
+           <p>Nos Tutos</p>
+           <p>Nos Promos</p>
+           <p>A La Une</p>
+        </div>
+  </div>
+</div>
+
+<div class="univers-filter-container">
+    <div class="univers-filter">
+        <div class="univers-filter-select">
+            <h2 class="univers-filter-select-title">POUR QUELS UNIVERS OPTEZ VOUS ?</h2>
+           
+            <div id="myBtnContainer">
+              <div class="univers-box color1" style="background-image: url(1.png); background-size: cover;">
+                <button class="btn-univers backgroun-color1" onclick="filterSelection('bebeEtEnfant')"> UNIVERS BEBES ET ENFANTS</button>
+              </div>
+              <div class="univers-box color2"  style="background-image: url(2.png); background-size: cover;background-position: center;">
+                <button class="btn-univers backgroun-color2" onclick="filterSelection('mamanEtFemmeEnceinte')"> UNIVERS MaMAN ET FEMME ENCEINTE</button>
+              </div>
+              <div class="univers-box color3"  style="background-image: url(3.png); background-size: cover;background-position: center;">
+                <button class="btn-univers backgroun-color3" onclick="filterSelection('vitalite')"> UNIVERS VITALITE</button>
+              </div>
+              <div class="univers-box color4"  style="background-image: url(4.png); background-size: cover; background-position: center;">
+                <button class="btn-univers backgroun-color4" onclick="filterSelection('hygieneNasale')"> UNIVERS HYGIENE NASALE</button>
+              </div>
+              <div class="univers-box color5"  style="background-image: url(5.png); background-size: cover;">
+                <button class="btn-univers backgroun-color5" onclick="filterSelection('sommeil')"> UNIVERS SOMMEIL & ANXIETE</button>
+              </div>
+                
+              </div>
+        </div>
+        <div class="univers-filter-combo">
+            <h2 class="univers-filter-select-title">DEFINISSEZ VOTRE BESOINS !</h2>
+            <div class="select-univers" style="width:300px; padding-left: 8%;">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ALL
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <button class="dropdown-item" onclick="filterSelection('all')"> ALL</button>
+                        <button class="dropdown-item" onclick="filterSelection('Coliques')"> Coliques& incomforts digestifs</button>
+                        <button class="dropdown-item" onclick="filterSelection('memoire')"> Mémoire & concentration</button>
+                        <button class="dropdown-item" onclick="filterSelection('Croissance')"> Croissance & vitamines</button>
+                        <button class="dropdown-item" onclick="filterSelection('Defenses')"> Defenses naturelles</button>
+                        <button class="dropdown-item" onclick="filterSelection('Décongestionnant')"> Décongestionnant nasal</button>
+                        <button class="dropdown-item" onclick="filterSelection('Toux')"> Toux & maux de  gorge</button>
+                        <button class="dropdown-item" onclick="filterSelection('Energie')"> Energie</button>
+                        <button class="dropdown-item" onclick="filterSelection('Anxieté')"> Anxieté & sommeil</button>
+                    </div>
+                  </div>
+           
+        </div>
+        </div>
+    </div>
+    <div class="container-univers-affichage">
+      <div class="container-univers-affichage-title">
+       <h2>Liste des produits sélectionnés</h2>
+       <i class="material-icons" style="font-size: 35px;">search</i>
+      </div>
+       <div class="univers-affichage">
+        <div class="univers-affichage-container">
+          <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte Coliques"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  Neobaby Gripe Water</a></div>
+          <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite memoire"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  OMEGAPRO Junior</a></div>
+          <div class="filterDiv bebeEtEnfant hygieneNasale Décongestionnant"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  Free Nose®ASPIRATEUR NASAL</a></div>
+          <div class="filterDiv bebeEtEnfant hygieneNasale Décongestionnant"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  Free Nose® Eau de mer isotonique Spray nasal 0mois +</a></div>
+          <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite Croissance"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  MULTI PRO Junior</a></div>
+          <div class="filterDiv bebeEtEnfant hygieneNasale Décongestionnant"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  Free Nose® Eau de mer hypertonique Spray nasal 3 mois+</a></div>
+          <div class="filterDiv bebeEtEnfant hygieneNasale Décongestionnant"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  NASAL PRO Junior spray nasal</a></div>
+          <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite Defenses"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  FORCE PRO Junior</a></div>
+          <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  STOPRO</a></div>
+          <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte Coliques"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  SICKNESS MOTION Flacons buvables</a></div>
+          <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  ORAL PRO Spray oral</a></div>
+          <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite Energie"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  FERIPRO</a></div>
+        </div>
+        <div class="univers-affichage-container">  
+          
+            <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite memoire"><a href="#" class="openPopup"> <img src="pills.svg" style="width: 35px;"/> Bemory KIDS</a></div>
+            <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite Croissance"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  MULTILINK® KIDS Vaporisateur oral</a></div>
+            <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite Croissance"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  VITALINK® D3  Vaporisateur oral</a></div>
+            <div class="filterDiv bebeEtEnfant hygieneNasale Décongestionnant"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  FREE NOSE® Eau de mer avec ALOE VERA ET MENTHE  Spray nasal</a></div>
+            <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite Defenses"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  EQUILINK KIDS Vaporisateur oral</a></div>
+            <div class="filterDiv bebeEtEnfant mamanEtFemmeEnceinte vitalite Defenses"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  DEFENSES KIDS Flacons buvables</a></div>
+            <div class="filterDiv mamanEtFemmeEnceinte vitalite Croissance"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  VITALINK® D3  GOUTTES</a></div>
+            <div class="filterDiv vitalite Energie"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  FORCE NRG-S Tonus flacons buvables</a></div>
+            <div class="filterDiv sommeil Anxieté"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  QUICK SLEEP MELATONIN SPRAY</a></div>
+            <div class="filterDiv sommeil Anxieté"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  EFICAPS Capsules</a></div>
+            <div class="filterDiv   Toux"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  Toux & maux de  gorge	STOPRO</a></div>
+            <div class="filterDiv   Toux"><a href="#" class="openPopup"><img src="pills.svg" style="width: 35px;"/>  ORAL PRO Junior spray oral</a></div>
+         </div>
+    </div>
+    </div>
+    
+  </div>
+  <div class="produit-affiche">
+    <!-- <div style="    border: 3px solid #fff;
+    width: 78%;
+    height: 482px;
+    position: absolute;
+    top: 1%;
+    left: 7px;
+    z-index: 99;">
+
+  </div> -->
+  <div class="produit-descreption">
+    
+       <div class="produit-descreption-part1" style="background-color: #EEEFEB;">
+     <h1 class="produit-name">OralPro Junior</h1>
+     <img src="./IMG_0771.jpg" width="100%" height="80%"/>
+     </div>
+     <div class="produit-descreption-part2">
+    <section>
+      <div class="screen">
+        <div style="background-color: rgba(0, 0, 0, 0.459); height: 100%; width: 100%; text-align: center;z-index: 999;" >
+          <div class="card" style="margin-left: auto;margin-right: auto; ">
+            <div class="imgBox" >
+              <h2 class="h2">Présentation</h2>
+              <p class="p">Iacon spray de 30ml.</p>
+  
+              <h2 class="h2">INDICATIONS</h2>
+              <p class="p">Picotement de gorge, laryngite,enrouement et extinction de la voix.</p>
+               
+              <h2 class="h2">COMPOSITION</h2>
+              <p class="p">Extrait de propolis, extrait de mauve,extrait d'échinacéz et du cuivre</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+  
+      <!-- 2 -->
+      <div class="screen">
+        <div class="card">
+          <div class="imgBox">
+            <h2 class="h2">CIBLES</h2>
+            <p class="p"> <strong>Adulte et enfant</strong>  de 3 ans</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3 -->
+      <div class="screen">
+        <div class="card">
+          <div class="imgBox">
+            <h2 class="h2">POSOLOGIE</h2>
+            <p class="p"> 2 pulvériation s3 à 4 fois par jour pendant 5 jours</p>
+          </div>
+          
+        </div>
+      </div>
+      
+    </section>
+     </div>
+  </div>
+  </div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<h2 class="footer-heading"><img src="./images/logo-bb-distribution%20-%20Copie.png" class="footer-logo"></h2>
+					<p class="footer-para text-white">A small river named Duden flows by their place and supplies it
+						with the necessary regelialia.</p>
+					<p class="copyright mt-4">
+						
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> GH Company</a>
+						
+					</p>
+				</div>
+				<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+					<h2 class="footer-heading">Quick Links</h2>
+					<ul class="list-unstyled">
+						<li><a href="#" class="py-2 d-block">About us</a></li>
+						<li><a href="#" class="py-2 d-block">Products</a></li>
+						<li><a href="#" class="py-2 d-block">Services</a></li>
+						<li><a href="#" class="py-2 d-block">Contact us</a></li>
+						<li><a href="#" class="py-2 d-block">Terms of service</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<h2 class="footer-heading">Have a Questions?</h2>
+					<div class="block-23 mb-3">
+						<ul>
+							<li><span class="icon fa fa-map"></span><span class="text">203 Fake St. Mountain View, San
+									Francisco, California, USA</span></li>
+							<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
+										210</span></a></li>
+							<li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+										class="text">info@yourdomain.com</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+					<h2 class="footer-heading">Follow Us</h2>
+					<ul class="ftco-footer-social p-0">
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+								title="Twitter"><span class="fa fa-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+								title="Facebook"><span class="fa fa-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top"
+								title="Instagram"><span class="fa fa-instagram"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-12 text-center">
+
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="jPopup.min.js"></script>
+    <link href='jPopup.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script>
+
+        /*** DEMO js ***/
+        
+        document.querySelector('.openPopup').addEventListener('click', function() {
+    
+            var jPopupDemo = new jPopup({
+    
+                contentHtml: '<iframe src="produit1.html" border=0 style="border:0px; width:100%;height:100%"></iframe>'
+    
+            });
+    
+        });
+    
+    </script>
+    <script> 
+        $( document ).ready(function() {
+            $(function(){
+  
+  $(".dropdown-menu button").click(function(){
+    
+    $(".btn:first-child").text($(this).text());
+     $(".btn:first-child").val($(this).text());
+  });
+
+});
+});
+           
+  //filterSelection($(this).val());
+ 
+        
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn-univers");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+ 
+     
+      
+
+        </script>
+</body>
+</html>
